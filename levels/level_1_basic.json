@@ -1,0 +1,16 @@
+{
+    "name": "Nivel 1: El Comienzo (JSON)",
+    "map": [
+        "#######",
+        "#H....#",
+        "#.###.#",
+        "#...K.#",
+        "###.###",
+        "#D....#",
+        "#....E#",
+        "#######"
+    ],
+    "hero_pos": [1, 1],
+    "items": ["key"],
+    "goal": "Llega a la salida E. Necesitas la llave K para la puerta D."
+}
