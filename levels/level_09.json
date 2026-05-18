@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 9: Laberinto de Cristal",
+    "map": ["###########", "#H.......#", "#.#####.#", "#.#...#.#", "#.#.E.#.#", "#.#...#.#", "#.#####.#", "#.......#", "###########"],
+    "hero_pos": [1, 1],
+    "items": [],
+    "goal": "Encuentra el camino al centro del laberinto."
+}

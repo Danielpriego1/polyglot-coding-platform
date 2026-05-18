@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 7: Doble Seguridad",
+    "map": ["###########", "#H.K...K..#", "#####D#D###", "    #.#.#  ", "    #.E.#  ", "    #####  "],
+    "hero_pos": [1, 1],
+    "items": ["key", "key"],
+    "goal": "Necesitas dos llaves para pasar las dos puertas."
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 4: Puertas Cerradas",
+    "map": ["#########", "#H.K.#.E#", "#####D###", "    #.#  ", "    ###  "],
+    "hero_pos": [1, 1],
+    "items": ["key"],
+    "goal": "Recoge la llave para abrir la puerta (D) y llegar a E."
+}

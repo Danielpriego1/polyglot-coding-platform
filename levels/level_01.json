@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 1: Primeros Pasos",
+    "map": ["#######", "#H...E#", "#######"],
+    "hero_pos": [1, 1],
+    "items": [],
+    "goal": "Mueve al héroe a la derecha hasta la salida E. Usa hero.move_right() en Python."
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 2: El Poder de los Bucles",
+    "map": ["###########", "#H.......E#", "###########"],
+    "hero_pos": [1, 1],
+    "items": [],
+    "goal": "La salida está lejos. Usa un bucle 'for' para moverte 7 veces a la derecha."
+}

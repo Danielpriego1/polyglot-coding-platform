@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 5: El Laberinto Simple",
+    "map": ["#######", "#H#...#", "#.#.#.#", "#...#E#", "#######"],
+    "hero_pos": [1, 1],
+    "items": [],
+    "goal": "Navega por el laberinto hasta la salida."
+}

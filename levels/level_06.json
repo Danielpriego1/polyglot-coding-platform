@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 6: Zig-Zag",
+    "map": ["#########", "#H..#...#", "###..##.#", "#...#...#", "#.###.###", "#.....E.#", "#########"],
+    "hero_pos": [1, 1],
+    "items": [],
+    "goal": "Usa movimientos combinados para atravesar el zig-zag."
+}

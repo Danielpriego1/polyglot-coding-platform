@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 10: El Desafío Final",
+    "map": ["#############", "#H.K.#.K.#.E#", "###D###D###D#", "#...#...#...#", "#.K.#.K.#.K.#", "#############"],
+    "hero_pos": [1, 1],
+    "items": ["key", "key", "key", "key", "key"],
+    "goal": "Recoge todas las llaves y abre todas las puertas para ganar el juego."
+}

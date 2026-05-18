@@ -1,0 +1,7 @@
+{
+    "name": "Nivel 8: El Gran Salto",
+    "map": ["#############", "#H.........E#", "# ######### #", "#           #", "#############"],
+    "hero_pos": [1, 1],
+    "items": [],
+    "goal": "Usa un bucle anidado o una secuencia larga para llegar al final."
+}
