@@ -1,47 +1,17 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  insforge-db:
-    image: postgres:15-alpine
-    container_name: insforge-db
-    environment:
-      POSTGRES_USER: ${DB_USER:-insforge}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-insforge_pass}
-      POSTGRES_DB: ${DB_NAME:-insforge}
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+  play:
+    build: .
+    container_name: polyglot-play
     ports:
-      - "5432:5432"
-    networks:
-      - insforge-network
-
-  insforge-api:
-    image: insforge/insforge:latest
-    container_name: insforge-api
-    depends_on:
-      - insforge-db
+      - "8000:8000"
+    restart: unless-stopped
+    env_file:
+      - .env
     environment:
-      DATABASE_URL: postgresql://${DB_USER:-insforge}:${DB_PASSWORD:-insforge_pass}@insforge-db:5432/${DB_NAME:-insforge}
-      JWT_SECRET: ${JWT_SECRET:-super_secret_jwt_key_change_me}
-      OPENAI_API_KEY: ${OPENAI_API_KEY}
-    ports:
-      - "8080:8080"
-    networks:
-      - insforge-network
-
-  insforge-worker:
-    image: insforge/worker:latest
-    container_name: insforge-worker
-    depends_on:
-      - insforge-api
-    environment:
-      API_URL: http://insforge-api:8080
-    networks:
-      - insforge-network
-
-networks:
-  insforge-network:
-    driver: bridge
+      - DATABASE_URL=${DATABASE_URL:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
 
 volumes:
-  postgres_data:
+  pgdata:
